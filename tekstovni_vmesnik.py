@@ -1,6 +1,6 @@
 import model #vkljucimo drugo datoteko, da dobimo vse konstante, klicemo z model.
  
-
+  
 def izpis_igre(igra):
     return ( 
         "=======================================================\n" + 

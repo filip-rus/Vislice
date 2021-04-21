@@ -6,7 +6,7 @@ PONOVLJENA_CRKA = "o"
 NAPACNA_CRKA = "-"
 ZMAGA = "W"
 PORAZ = "X"  
-class Igra:
+class Igra: 
     def __init__(self,geslo,crke = None): #objektov ne damo za neobvezen argument
         self.geslo = geslo
         if crke is None:
