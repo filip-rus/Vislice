@@ -1,6 +1,6 @@
 import random
 
-STEVILO_DOVOLJENIH_NAPAK = 10
+STEVILO_DOVOLJENIH_NAPAK = 9
 PRAVILNA_CRKA = "+"
 PONOVLJENA_CRKA = "o"
 NAPACNA_CRKA = "-"
@@ -66,6 +66,7 @@ def nova_igra():
     return Igra(random.choice(bazen_besed)) 
 
 class Vislice:
+
     def __init__(self):
         self.igre = {}
 
@@ -78,11 +79,11 @@ class Vislice:
     def nova_igra(self):
         id_igre = self.prost_id_igre()
         igra = nova_igra()
-        self.igre[id_igre] = (igra,ZACETEK)
+        self.igre[id_igre] = (igra, ZACETEK)
         return id_igre
 
-    def ugibaj(self,id_igre,crka):
-        igra,stanje = self.igre[id_igre]
+    def ugibaj(self, id_igre, crka):
+        igra, _ = self.igre[id_igre]
         stanje = igra.ugibaj(crka)
-        self.igre[id_igre] = (igra,stanje)
+        self.igre[id_igre] = (igra, stanje)
         
