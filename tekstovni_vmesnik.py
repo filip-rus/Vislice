@@ -30,4 +30,4 @@ def pozeni_vmesnik():
             break
         elif stanje == model.PORAZ:
             print(izpis_poraza(igra))
-            break
+            break 
